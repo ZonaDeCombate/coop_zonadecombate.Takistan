@@ -1,0 +1,75 @@
+#include "zona_de_combate_ACE.hpp"
+
+//------------------------- On Load
+
+author = Swordfish | Toaster;					        // Visible when loading mission
+onLoadName = "Zona de Combate | ISIS";  		        // Visible when loading mission
+OnLoadMission = "Buscar informações e inteligência é a chave para desmontar as operações dos insurgentes em todo o território. ";
+loadScreen = "zonadecombate.paa";				        // Visible when loading mission
+overviewPicture = "zonadecombate.paa";			        // Visible when selecting mission	
+
+onLoadIntro = "Zona de Combate";						// Displays a message while the intro is loading.
+onLoadIntroTime = 0;									// Time and date displayed while the intro loads. 1 visible, 0 hidden.
+onLoadMissionTime = 0;									// Time and date displayed while the mission loads. 1 visible, 0 hidden.
+
+class Header 
+	{
+		gameType = COOP;								// Unknown, COOP, DM, TDM, CTF, SC, CTI, RPG, Sandbox, Seize, Defend.
+		minPlayers = 1;									// Min # of players the MISSION supports
+		maxPlayers = 60;								// Max # of players the MISSION supports, not server slots. Make sure # is greater than server slots.
+	}; 
+
+//------------------------- Admin
+
+enableDebugConsole = 1;									// 0 = disabled. 1 = admins, 2 = everybody. 0 is recommended in MP.
+allowFunctionsLog = 0; 									// Log functions to .rpt. disabled with 0
+
+//------------------------- Misc
+
+disableChannels[] = {0,1,2,3,4,5,6};					// 0 = Global, 1 = Side, 2 = Command, 3 = Group, 4 = Vehicle, 5 = Direct, 6 = System. Admin/server/BattlEye can still use Global. 
+disabledAI = 1;											// No AI in playable units
+aiKills = 0; 											// disable scorelist for AI players
+enableItemsDropping = 0; 								// disabled with 0
+showUAVFeed = 1;										// Enables/Disables the UAV Feed. Zeus-related.
+
+//------------------------- Respawn
+
+Respawn = 3;											// 1 = bird 0 = none.. 2 = instant where died. 3 = base or respawn_west marker. 4 = respawn with team, or bird. 5 = into AI or bird.
+respawnDelay = 15;										// Delay prior to respawn, ensure longer than BTC revive delay.
+RespawnDialog = 0;                                      // default = 1. show respawn timer and scoreboard when killed.
+respawnButton = 0;	
+respawnOnStart = -1	
+					
+
+//----------------------- Garbage Colector --------------------------//
+
+wreckLimit = 3;											// Limit before removal is triggered
+wreckRemovalMinTime = 120;								// Min time before removal
+wreckRemovalMaxTime = 360;								// Max time before removal
+corpseLimit = 5;										// Limit before removal is triggered		
+corpseRemovalMinTime = 60;								// Min time before removal
+corpseRemovalMaxTime = 120;								// Max time before removal
+
+//-- Includes
+#include "SpyderRecruitment\dialogs.hpp"
+#include "VehicleSpawner\dialogs.hpp"
+#include "SpyderCivInteraction\civilianInteraction.hpp"
+#include "data\dialogs\createBase.hpp"
+#include "SLO\dialog.hpp"
+
+//-- Functions
+class CfgFunctions {
+	#include "Functions\cfgfunctions.hpp"
+	#include "VehicleSpawner\functions\cfgfunctions.hpp"
+	#include "SLO\functions\cfgfunctions.hpp"
+	#include "SpyderCivInteraction\cfgfunctions.hpp"
+};
+
+//-- Man EventHandlers
+class Extended_Init_EventHandlers {
+	class CAManBase {
+		class Spyder_EHMan {
+			init = "_this call Spyder_fnc_EHMan";
+		};
+	};
+};
