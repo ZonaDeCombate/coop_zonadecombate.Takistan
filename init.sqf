@@ -1,5 +1,7 @@
-//HandlessClient Inicialização
+// Iniciando sistema de animações
+call compile preprocessFileLineNumbers "ShoterAnimation\init.sqf";
 
+//HandlessClient Inicialização
 if (!hasInterface && !isDedicated) then {
   headlessClients = [];
   headlessClients pushBack player;
