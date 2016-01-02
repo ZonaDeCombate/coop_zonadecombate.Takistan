@@ -53,4 +53,4 @@ sleep _delay;
 } forEach _vehicles;
 
 //-- Notify player that process is complete
-titleText ["Vehicle servicing complete", "PLAIN", .2];
+titleText ["Manutenção do veículo terminou", "PLAIN", .2];

@@ -17,8 +17,8 @@ call compile preprocessFileLineNumbers "SpyderFramework\init.sqf";
 execVM "Scripts\ALiVESettings.sqf";
 
 
-
-if (! isDedicated) then
+//TODO: Não tá funcionando direito. Rever.
+/*if (! isDedicated) then
 {
 
   zc_fnc_setRating = {
@@ -39,6 +39,6 @@ if (! isDedicated) then
     sleep 0.4;
     false
   };
-};
+};*/
 
 waituntil {(player getvariable ["alive_sys_player_playerloaded",false])};
