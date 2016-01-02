@@ -13393,7 +13393,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 517.93;this setposATL [8197.847656,2135.663086,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 517.93;this setposATL [8197.847656,2135.663086,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item830
 		{
@@ -13403,7 +13403,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 571.907;this setposATL [8198.681641,2136.0466309,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 571.907;this setposATL [8198.681641,2136.0466309,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item831
 		{
@@ -13413,7 +13413,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 498.422;this setposATL [8199.823242,2136.466064,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 498.422;this setposATL [8199.823242,2136.466064,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item832
 		{
@@ -13423,7 +13423,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 517.614;this setposATL [8200.640625,2136.85083,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 517.614;this setposATL [8200.640625,2136.85083,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item833
 		{
@@ -13433,7 +13433,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 506.881;this setposATL [8201.490234,2137.334717,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 506.881;this setposATL [8201.490234,2137.334717,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item834
 		{
@@ -13443,7 +13443,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 514.962;this setposATL [8202.337891,2137.730957,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 514.962;this setposATL [8202.337891,2137.730957,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item835
 		{
@@ -13453,7 +13453,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 520.833;this setposATL [8203.255859,2138.0993652,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 520.833;this setposATL [8203.255859,2138.0993652,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item836
 		{
@@ -13463,7 +13463,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 516.162;this setposATL [8204.145508,2138.525635,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 516.162;this setposATL [8204.145508,2138.525635,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item837
 		{
@@ -13473,7 +13473,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 487.311;this setposATL [8205.100586,2138.9375,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 487.311;this setposATL [8205.100586,2138.9375,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item838
 		{
@@ -13483,7 +13483,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 537.879;this setposATL [8205.826172,2139.333252,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 537.879;this setposATL [8205.826172,2139.333252,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item839
 		{
@@ -13493,7 +13493,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 503.094;this setposATL [8206.884766,2139.792725,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 503.094;this setposATL [8206.884766,2139.792725,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item840
 		{
@@ -13503,7 +13503,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 516.982;this setposATL [8207.641602,2140.183105,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 516.982;this setposATL [8207.641602,2140.183105,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item841
 		{
@@ -13513,7 +13513,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 514.773;this setposATL [8208.539063,2140.58667,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 514.773;this setposATL [8208.539063,2140.58667,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item842
 		{
@@ -13523,7 +13523,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 569.318;this setposATL [8209.457031,2140.961426,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 569.318;this setposATL [8209.457031,2140.961426,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item843
 		{
@@ -13533,7 +13533,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 662.752;this setposATL [8208.599609,2142.628418,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 662.752;this setposATL [8208.599609,2142.628418,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item844
 		{
@@ -13543,7 +13543,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 696.338;this setposATL [8207.90332,2142.0993652,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 696.338;this setposATL [8207.90332,2142.0993652,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item845
 		{
@@ -13553,7 +13553,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 692.361;this setposATL [8206.958984,2141.827881,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 692.361;this setposATL [8206.958984,2141.827881,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item846
 		{
@@ -13563,7 +13563,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 700.505;this setposATL [8206.166016,2141.378418,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 700.505;this setposATL [8206.166016,2141.378418,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item847
 		{
@@ -13573,7 +13573,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 696.275;this setposATL [8205.262695,2140.897705,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 696.275;this setposATL [8205.262695,2140.897705,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item848
 		{
@@ -13583,7 +13583,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 708.459;this setposATL [8204.335938,2140.444092,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 708.459;this setposATL [8204.335938,2140.444092,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item849
 		{
@@ -13593,7 +13593,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 669.823;this setposATL [8203.40918,2140.0422363,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 669.823;this setposATL [8203.40918,2140.0422363,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item850
 		{
@@ -13603,7 +13603,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 652.02;this setposATL [8202.567383,2139.621338,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 652.02;this setposATL [8202.567383,2139.621338,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item851
 		{
@@ -13613,7 +13613,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 710.101;this setposATL [8201.701172,2139.14209,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 710.101;this setposATL [8201.701172,2139.14209,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item852
 		{
@@ -13623,7 +13623,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 688.384;this setposATL [8200.80957,2138.79834,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 688.384;this setposATL [8200.80957,2138.79834,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item853
 		{
@@ -13633,7 +13633,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 711.995;this setposATL [8199.901367,2138.358887,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 711.995;this setposATL [8199.901367,2138.358887,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item854
 		{
@@ -13643,7 +13643,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 687.058;this setposATL [8198.993164,2137.952881,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 687.058;this setposATL [8198.993164,2137.952881,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item855
 		{
@@ -13653,7 +13653,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 695.075;this setposATL [8198.0986328,2137.532227,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 695.075;this setposATL [8198.0986328,2137.532227,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item856
 		{
@@ -13663,7 +13663,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 692.171;this setposATL [8197.246094,2137.135986,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 692.171;this setposATL [8197.246094,2137.135986,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item857
 		{
@@ -13673,7 +13673,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 841.351;this setposATL [8211.707031,2135.641846,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 841.351;this setposATL [8211.707031,2135.641846,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item858
 		{
@@ -13683,7 +13683,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 894.191;this setposATL [8210.750977,2135.256836,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 894.191;this setposATL [8210.750977,2135.256836,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item859
 		{
@@ -13693,7 +13693,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 873.989;this setposATL [8209.816406,2134.923584,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 873.989;this setposATL [8209.816406,2134.923584,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item860
 		{
@@ -13703,7 +13703,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 879.482;this setposATL [8208.972656,2134.481934,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 879.482;this setposATL [8208.972656,2134.481934,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item861
 		{
@@ -13713,7 +13713,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 885.416;this setposATL [8208.0195313,2134.120605,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 885.416;this setposATL [8208.0195313,2134.120605,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item862
 		{
@@ -13723,7 +13723,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 874.621;this setposATL [8207.170898,2133.786377,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 874.621;this setposATL [8207.170898,2133.786377,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item863
 		{
@@ -13733,7 +13733,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 883.522;this setposATL [8206.21875,2133.368896,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 883.522;this setposATL [8206.21875,2133.368896,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item864
 		{
@@ -13743,7 +13743,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 869.191;this setposATL [8205.338867,2132.98584,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 869.191;this setposATL [8205.338867,2132.98584,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item865
 		{
@@ -13753,7 +13753,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 852.399;this setposATL [8204.545898,2132.577881,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 852.399;this setposATL [8204.545898,2132.577881,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item866
 		{
@@ -13763,7 +13763,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 908.901;this setposATL [8203.62207,2132.198242,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 908.901;this setposATL [8203.62207,2132.198242,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item867
 		{
@@ -13773,7 +13773,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 878.283;this setposATL [8202.665039,2131.917236,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 878.283;this setposATL [8202.665039,2131.917236,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item868
 		{
@@ -13783,7 +13783,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 894.57;this setposATL [8201.711914,2131.544678,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 894.57;this setposATL [8201.711914,2131.544678,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item869
 		{
@@ -13793,7 +13793,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 866.098;this setposATL [8200.808594,2131.234863,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 866.098;this setposATL [8200.808594,2131.234863,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item870
 		{
@@ -13803,7 +13803,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 885.921;this setposATL [8199.913086,2130.856689,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 885.921;this setposATL [8199.913086,2130.856689,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item871
 		{
@@ -13813,7 +13813,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 33.0299;this setposATL [8198.980469,2130.434082,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 33.0299;this setposATL [8198.980469,2130.434082,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item872
 		{
@@ -13823,7 +13823,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 1010.79;this setposATL [8198.0751953,2129.972656,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 1010.79;this setposATL [8198.0751953,2129.972656,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item873
 		{
@@ -13833,7 +13833,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 159.519;this setposATL [8198.949219,2129.224609,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 159.519;this setposATL [8198.949219,2129.224609,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item874
 		{
@@ -13843,7 +13843,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 729.419;this setposATL [8198.421875,2131.892334,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 729.419;this setposATL [8198.421875,2131.892334,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item875
 		{
@@ -13853,7 +13853,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 693.939;this setposATL [8199.308594,2132.218018,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 693.939;this setposATL [8199.308594,2132.218018,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item876
 		{
@@ -13863,7 +13863,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 702.083;this setposATL [8200.243164,2132.543213,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 702.083;this setposATL [8200.243164,2132.543213,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item877
 		{
@@ -13873,7 +13873,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 691.161;this setposATL [8201.162109,2132.895752,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 691.161;this setposATL [8201.162109,2132.895752,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item878
 		{
@@ -13883,7 +13883,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 699.558;this setposATL [8202.0644531,2133.335205,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 699.558;this setposATL [8202.0644531,2133.335205,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item879
 		{
@@ -13893,7 +13893,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 693.876;this setposATL [8202.992188,2133.729736,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 693.876;this setposATL [8202.992188,2133.729736,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item880
 		{
@@ -13903,7 +13903,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 698.863;this setposATL [8203.875977,2134.0395508,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 698.863;this setposATL [8203.875977,2134.0395508,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item881
 		{
@@ -13913,7 +13913,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 695.959;this setposATL [8204.811523,2134.378662,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 695.959;this setposATL [8204.811523,2134.378662,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item882
 		{
@@ -13923,7 +13923,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 704.482;this setposATL [8205.701172,2134.80249,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 704.482;this setposATL [8205.701172,2134.80249,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item883
 		{
@@ -13933,7 +13933,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 696.338;this setposATL [8206.575195,2135.121338,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 696.338;this setposATL [8206.575195,2135.121338,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item884
 		{
@@ -13943,7 +13943,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 697.79;this setposATL [8207.498047,2135.472168,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 697.79;this setposATL [8207.498047,2135.472168,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item885
 		{
@@ -13953,7 +13953,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 694.128;this setposATL [8208.453125,2135.820801,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 694.128;this setposATL [8208.453125,2135.820801,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item886
 		{
@@ -13963,7 +13963,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 734.595;this setposATL [8209.327148,2136.266846,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 734.595;this setposATL [8209.327148,2136.266846,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item887
 		{
@@ -13973,7 +13973,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 841.981;this setposATL [8210.108398,2136.781494,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 841.981;this setposATL [8210.108398,2136.781494,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item888
 		{
@@ -13983,7 +13983,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 249.09;this setposATL [8210.996094,2137.15625,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 249.09;this setposATL [8210.996094,2137.15625,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item889
 		{
@@ -14004,7 +14004,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingTable_small_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 66.4257;this setposATL [8204.28418,2136.54834,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 66.4257;this setposATL [8204.28418,2136.54834,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item891
 		{
@@ -14014,7 +14014,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 804.039;this setposATL [8205.415039,2136.597168,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 804.039;this setposATL [8205.415039,2136.597168,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item892
 		{
@@ -14024,7 +14024,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;this allowDamage false;this setdir 54.6829;this setposATL [8205.145508,2137.415039,0];this setVectorUp [0,0,1]";
+			init="this enableSimulation false;this allowDamage false;this setdir 54.6829;this setposATL [8205.145508,2137.415039,0];this setVectorUp [0,0,1];[this, false] call ace_dragging_fnc_setCarryable;";
 		};
 		class Item893
 		{
