@@ -1,4 +1,15 @@
+//HandlessClient Inicialização
+
+if (!hasInterface && !isDedicated) then {
+  headlessClients = [];
+  headlessClients pushBack player;
+  publicVariable "headlessClients";
+  isHC = true;
+};
+
 execVM "briefing.sqf";
+
+enableSaving [false,false];
 
 //-- Initalize Spyder tasking system
 ["rhs_faction_usmc_d","LOP_ISTS"] execVM "SpyderTasking\init.sqf";
