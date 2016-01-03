@@ -21,7 +21,7 @@ enableSaving [false,false];
 ["init",["WEST","LOP_ISTS"]] call SCI_fnc_civilianInteraction;
 
 //-- Initialize Spyder Ambiance
-[true, true, 30, ["TAOR_US"], false] execVM "SpyderAmbiance\init.sqf";
+[true, true, 30, ["TAOR_BLU"], false] execVM "SpyderAmbiance\init.sqf";
 
 //-- Spyder Framework
 call compile preprocessFileLineNumbers "SpyderFramework\init.sqf";
