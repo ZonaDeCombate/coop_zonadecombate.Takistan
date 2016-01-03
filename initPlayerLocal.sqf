@@ -7,5 +7,5 @@ execVM "Scripts\addInsurgencyMenu.sqf";
 // Falantes na Base
 while {true} do {
     [] execVM "Scripts\loudspeakers.sqf";
-    sleep 400;
+    sleep 16470;
 };

@@ -64,7 +64,7 @@ _fn_broadcastWhole =
 {
 	_x call _fn_broadcastWhole;
 
-	sleep ((random 30) + 10);
+	sleep ((random 30) + 1800);
 
 }
 forEach _broadcasts;
