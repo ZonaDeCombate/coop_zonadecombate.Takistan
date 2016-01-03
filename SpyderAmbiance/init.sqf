@@ -2,7 +2,7 @@
 if (!isServer) exitWith {};
 
 params [
-	["_animals", true],
+	["_animals", false],
 	["_terrorists", true],
 	["_delay", 20],
 	["_blacklists", []],
