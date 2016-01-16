@@ -1,3 +1,40 @@
+//SANDSTORM
+
+// define which worlds may use sand EFX
+// *** Altis added for testing, its not always a great sand/dust map ***
+varSandWorlds = ["mountains_acr","shapur_baf","takistan","zargabad","bmfayshkhabur","clafghan","fata","mcn_aliabad","mske","smd_sahrani_a3","pja306","TUP_Qom","queshkibrul","Razani","altis"];
+
+[] spawn {enableEnvironment false;};
+
+// is this JIP ?
+if (!isServer && isNull player) then {
+	waitUntil {sleep 1;!(isNull player)};
+	JIP_varSnowData = [player];
+	publicVariableServer "JIP_varSnowData";
+	JIP_varSandData = [player];
+	publicVariableServer "JIP_varSandData";
+};
+
+// if server option is NOT set to disabled, process further
+if ((paramsArray select 0) != 4) then {
+	if (isServer) then {
+		if !(toLower(worldName) in varSandWorlds) exitWith {true;};
+		nul = [] execVM "MKY\sand\MKY_Sand_Server.sqf";
+	};
+	if (hasInterface) then {
+		0 = [] spawn {
+			if !(toLower(worldName) in varSandWorlds) exitWith {true;};
+			waitUntil {sleep 5;!(isNil "varEnableSand")};
+			// call the sand client script, using params array as input for type/strength of the EFX
+			// look at MKY_Sand_Client.sqf for details on the parameters 
+			0 = [0,"",true,false,true,true,true,(paramsArray select 0)] execVM "MKY\sand\MKY_Sand_Client.sqf";
+		};
+	};
+};
+
+
+
+
 // Iniciando sistema de animações
 call compile preprocessFileLineNumbers "ShoterAnimation\init.sqf";
 
@@ -55,3 +92,4 @@ execVM "Scripts\ALiVESettings.sqf";
 };*/
 
 waituntil {(player getvariable ["alive_sys_player_playerloaded",false])};
+

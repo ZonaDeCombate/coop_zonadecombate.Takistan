@@ -31,6 +31,8 @@ disabledAI = 1;											// No AI in playable units
 aiKills = 0; 											// disable scorelist for AI players
 enableItemsDropping = 0; 								// disabled with 0
 showUAVFeed = 1;										// Enables/Disables the UAV Feed. Zeus-related.
+forceRotorLibSimulation = 1; // force enable/disable RotorLib as of v1.34 (0-options based/1-force enable/2-force disable)
+saving = 0; // disable saving
 
 //------------------------- Respawn
 
@@ -41,14 +43,18 @@ respawnButton = 0;
 respawnOnStart = -1
 
 
-//----------------------- Garbage Colector --------------------------//
+//-------------------------Garbage Coletor
 
-wreckLimit = 3;											// Limit before removal is triggered
-wreckRemovalMinTime = 120;								// Min time before removal
-wreckRemovalMaxTime = 360;								// Max time before removal
-corpseLimit = 5;										// Limit before removal is triggered
-corpseRemovalMinTime = 60;								// Min time before removal
-corpseRemovalMaxTime = 120;								// Max time before removal
+//corpseManagerMode = (0-none 1-all 2-none_but_respawned 3-all_but_respawned)
+
+corpseManagerMode = 1;
+corpseLimit = 10;
+corpseRemovalMinTime = 120;
+corpseRemovalMaxTime = 300;
+wreckManagerMode = 1;
+wreckLimit = 10;
+wreckRemovalMinTime = 120;
+wreckRemovalMaxTime = 300;
 
 //-- Includes
 #include "SpyderRecruitment\dialogs.hpp"
@@ -56,6 +62,27 @@ corpseRemovalMaxTime = 120;								// Max time before removal
 #include "SpyderCivInteraction\civilianInteraction.hpp"
 #include "data\dialogs\createBase.hpp"
 #include "SLO\dialog.hpp"
+
+class CfgMusic
+{
+	tracks[]={};
+
+	class MKY_Blizzard
+	{
+		name = "";
+		sound[] = {"\MKY\sounds\m0nkey_blizzard.ogg", db+10, 1.0};
+	};
+};
+
+class Params {
+	class PEFX {
+		title = "Snow/Sand particle effects";
+		values[] = {0,1,2,3,4};
+		texts[] = {"Random","Light","Moderate","Heavy","Disabled"};
+		default = 1;
+	};
+};
+
 
 //-- Functions
 class CfgFunctions {
