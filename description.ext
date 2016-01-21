@@ -63,34 +63,34 @@ wreckRemovalMaxTime = 300;
 #include "data\dialogs\createBase.hpp"
 #include "SLO\dialog.hpp"
 
-class CfgMusic
+class Params
 {
-	tracks[]={};
-
-	class MKY_Blizzard
+   class MKY_EFX
 	{
-		name = "";
-		sound[] = {"\MKY\sounds\m0nkey_blizzard.ogg", db+10, 1.0};
-	};
-};
-
-class Params {
-	class PEFX {
-		title = "Snow/Sand particle effects";
+		title = "Sand Particle EFX strength";
 		values[] = {0,1,2,3,4};
 		texts[] = {"Random","Light","Moderate","Heavy","Disabled"};
 		default = 1;
 	};
 };
 
+class CfgMusic
+{
+	tracks[]={"MKY_Blizzard","MKY_Snowfall"};
 
-//-- Functions
-class CfgFunctions {
-	#include "Functions\cfgfunctions.hpp"
-	#include "VehicleSpawner\functions\cfgfunctions.hpp"
-	#include "SLO\functions\cfgfunctions.hpp"
-	#include "SpyderCivInteraction\cfgfunctions.hpp"
+	class MKY_Blizzard
+	{
+		name = "";
+		sound[] = {"\MKY\sounds\m0nkey_blizzard.ogg", db+0, 1.0};
+	};
+	class MKY_Snowfall
+	{
+		name = "";
+		sound[] = {"\MKY\sounds\m0nkey_snowfall.ogg", db+0, 1.0};
+	};
 };
+
+
 
 //-- Man EventHandlers
 class Extended_Init_EventHandlers {

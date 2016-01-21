@@ -1,36 +1,75 @@
-//SANDSTORM
 
-// define which worlds may use sand EFX
-// *** Altis added for testing, its not always a great sand/dust map ***
-varSandWorlds = ["mountains_acr","shapur_baf","takistan","zargabad","bmfayshkhabur","clafghan","fata","mcn_aliabad","mske","smd_sahrani_a3","pja306","TUP_Qom","queshkibrul","Razani","altis"];
+// test MKY sand EFX v003
 
-[] spawn {enableEnvironment false;};
+// examples
 
-// is this JIP ?
-if (!isServer && isNull player) then {
-	waitUntil {sleep 1;!(isNull player)};
-	JIP_varSnowData = [player];
-	publicVariableServer "JIP_varSnowData";
-	JIP_varSandData = [player];
-	publicVariableServer "JIP_varSandData";
-};
+/*
+	1 - create global array
+	2 - initialize the script
 
-// if server option is NOT set to disabled, process further
-if ((paramsArray select 0) != 4) then {
-	if (isServer) then {
-		if !(toLower(worldName) in varSandWorlds) exitWith {true;};
-		nul = [] execVM "MKY\sand\MKY_Sand_Server.sqf";
+	MKY_arSandEFX = [];
+	nul = [] execVM "MKY\MKY_Sand_Snow_Init.sqf";
+
+	RESULT - effect runs with default parameters (random strength)
+*/
+
+/*
+	1. create global array and populate with some options
+	2 - initialize the script
+
+	MKY_arSandEFX = [0,"",true,false,true,true,true,1];
+	nul = [] execVM "MKY\MKY_Sand_Snow_Init.sqf";
+
+	RESULT - effect runs with user defined parameters
+*/
+
+/*
+	1 - create a mechanism that, through code, sets global array values
+	2 - initialize the script
+
+	if ((some value) != 4) then {
+		MKY_arSandEFX = [0,"",true,false,true,true,true,1];
+		nul = [] execVM "MKY\MKY_Sand_Snow_Init.sqf";
 	};
-	if (hasInterface) then {
-		0 = [] spawn {
-			if !(toLower(worldName) in varSandWorlds) exitWith {true;};
-			waitUntil {sleep 5;!(isNil "varEnableSand")};
-			// call the sand client script, using params array as input for type/strength of the EFX
-			// look at MKY_Sand_Client.sqf for details on the parameters 
-			0 = [0,"",true,false,true,true,true,(paramsArray select 0)] execVM "MKY\sand\MKY_Sand_Client.sqf";
+
+*/
+
+/*
+	1 - create a mechanism that, through code, sets array values using mission parameters
+	2 - initialize the script
+
+	if ((paramsArray select 0) != 4) then {
+		MKY_arSandEFX = [0,"",true,false,true,true,true,(paramsArray select 0)];
+		nul = [] execVM "MKY\MKY_Sand_Snow_Init.sqf";
+	};
+
+	Or, if the mission maker wants something else, it might look like this:
+
+	if ((paramsArray select 0) != 4) then {
+		MKY_arSandEFX = []; // set as default
+		switch (paramsArray select 0) do {
+			case 0: {MKY_arSandEFX = [0,.8,true,true];};
+			case 1: {MKY_arSandEFX = [0,"",true,false,true,true,true,1];};
+			case 2: {MKY_arSandEFX = [0,.3,true,false,true,true,false,2];};
+			case 3: {MKY_arSandEFX = [[0.23,0.021,100],"",true,false,true,true,true,3];};
 		};
+		nul = [] execVM "MKY\MKY_Sand_Snow_Init.sqf";
 	};
+*/
+
+// the example below will work in single player and will create a "light" effect.
+// if the mission is loaded as multiplayer coop, the option would be available at mission start.
+// whatever value was chosen would be used.
+
+if ((paramsArray select 0) != 4) then {
+	// define the global sand parameter array
+	//[fog,overcast,use ppEfx,allow rain,force wind,vary fog,use wind audio,EFX strength]
+	MKY_arSandEFX = [0,"",true,false,true,true,true,(paramsArray select 0)];
+	// init the EFX scripts
+	nul = [] execVM "MKY\MKY_Sand_Snow_Init.sqf";
 };
+
+sleep 0.5;
 
 
 
