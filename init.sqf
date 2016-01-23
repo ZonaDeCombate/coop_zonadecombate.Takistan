@@ -69,11 +69,6 @@ if ((paramsArray select 0) != 4) then {
 	nul = [] execVM "MKY\MKY_Sand_Snow_Init.sqf";
 };
 
-sleep 0.5;
-
-
-
-
 // Iniciando sistema de animações
 call compile preprocessFileLineNumbers "ShoterAnimation\init.sqf";
 
@@ -87,8 +82,6 @@ if (!hasInterface && !isDedicated) then {
 
 execVM "briefing.sqf";
 
-enableSaving [false,false];
-
 //-- Initalize Spyder tasking system
 ["rhs_faction_usmc_d","LOP_ISTS"] execVM "SpyderTasking\init.sqf";
 
@@ -97,7 +90,7 @@ enableSaving [false,false];
 ["init",["WEST","LOP_ISTS"]] call SCI_fnc_civilianInteraction;
 
 //-- Initialize Spyder Ambiance
-[true, true, 30, ["TAOR_BLU"], false] execVM "SpyderAmbiance\init.sqf";
+[true, true, 30, ["TAOR_US"], false] execVM "SpyderAmbiance\init.sqf";
 
 //-- Spyder Framework
 call compile preprocessFileLineNumbers "SpyderFramework\init.sqf";

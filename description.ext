@@ -56,13 +56,6 @@ wreckLimit = 10;
 wreckRemovalMinTime = 120;
 wreckRemovalMaxTime = 300;
 
-//-- Includes
-#include "SpyderRecruitment\dialogs.hpp"
-#include "VehicleSpawner\dialogs.hpp"
-#include "SpyderCivInteraction\civilianInteraction.hpp"
-#include "data\dialogs\createBase.hpp"
-#include "SLO\dialog.hpp"
-
 class Params
 {
    class MKY_EFX
@@ -91,6 +84,20 @@ class CfgMusic
 };
 
 
+//-- Includes
+#include "SpyderRecruitment\dialogs.hpp"
+#include "VehicleSpawner\dialogs.hpp"
+#include "SpyderCivInteraction\civilianInteraction.hpp"
+#include "data\dialogs\createBase.hpp"
+#include "SLO\dialog.hpp"
+
+//-- Functions
+class CfgFunctions {
+	#include "Functions\cfgfunctions.hpp"
+	#include "VehicleSpawner\functions\cfgfunctions.hpp"
+	#include "SLO\functions\cfgfunctions.hpp"
+	#include "SpyderCivInteraction\cfgfunctions.hpp"
+};
 
 //-- Man EventHandlers
 class Extended_Init_EventHandlers {
