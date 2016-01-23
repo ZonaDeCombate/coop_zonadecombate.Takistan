@@ -1,4 +1,5 @@
 #include "zona_de_combate_ACE.hpp"
+#include "R3F_LOG\desc_include.h"
 
 //------------------------- On Load
 

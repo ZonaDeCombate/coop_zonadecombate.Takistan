@@ -1,3 +1,4 @@
+#include "SHK_Fastrope.sqf"
 //-- Add insurgency menu
 execVM "Scripts\addInsurgencyMenu.sqf";
 

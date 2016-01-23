@@ -38,16 +38,12 @@ class Mission
 		"A3_Structures_F_Items_Vessels",
 		"CABuildings2_Misc_Cargo",
 		"cup_cabuildings2_misc_cargo",
-		"A3_Structures_F_Mil_TentHangar",
 		"A3_Structures_F_Furniture",
 		"A3_Soft_F_Gamma_HEMTT",
 		"A3_Structures_F_Items_Tools",
 		"A3_Structures_F_Civ_Constructions",
 		"cup_misc3_config",
-		"A3_Air_F_EPC_Plane_CAS_01",
-		"A3_Armor_F_AMV",
 		"RHS_US_A2_AirImport",
-		"A3_Misc_F_Helpers",
 		"A3_Structures_F_Civ_InfoBoards",
 		"A3_Signs_F_AD",
 		"A3_Structures_F_Ind_Cargo",
@@ -316,6 +312,7 @@ class Mission
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
+					text="LOGIC_ALIVE";
 				};
 			};
 		};
@@ -4353,7 +4350,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=940;
+		items=945;
 		class Item0
 		{
 			position[]={8186.793,296.04001,1957.8997};
@@ -14157,10 +14154,61 @@ class Mission
 			text="piroca_1_10_1_1";
 			init="this setObjectTexture [0, ""images\018.jpg""]; this allowDamage false; this enablesimulation false;";
 		};
+		class Item940
+		{
+			position[]={8049.2671,296.04001,2048.9028};
+			azimut=-165.733;
+			id=1046;
+			side="EMPTY";
+			vehicle="B_Truck_01_box_F";
+			skill=0.60000002;
+			init="nul = [this, 60000, west, ""LIGHT""] execVM ""R3F_LOG\USER_FUNCT\init_creation_factory.sqf""; veh = [this, 90] execVM ""respawn.sqf""";
+		};
+		class Item941
+		{
+			position[]={8055.083,296.03439,2052.2507};
+			azimut=-165.715;
+			id=1047;
+			side="EMPTY";
+			vehicle="B_Truck_01_box_F";
+			skill=0.60000002;
+			init="nul = [this, 60000, west, ""LIGHT""] execVM ""R3F_LOG\USER_FUNCT\init_creation_factory.sqf""; veh = [this, 90] execVM ""respawn.sqf""";
+		};
+		class Item942
+		{
+			position[]={8039.7656,296.04001,2042.3477};
+			azimut=1275.2794;
+			id=1048;
+			side="EMPTY";
+			vehicle="B_Truck_01_transport_F";
+			skill=0.60000002;
+			init="null = [this, west] execVM ""CHHQ.sqf""";
+		};
+		class Item943
+		{
+			position[]={8178.2358,296.03519,2131.0029};
+			azimut=-25.826591;
+			id=1049;
+			side="EMPTY";
+			vehicle="MapBoard_altis_F";
+			skill=0.60000002;
+			text="map";
+			init="null = [this, west] execVM ""CHHQ.sqf""";
+		};
+		class Item944
+		{
+			position[]={8033.3838,296.03708,2039.3271};
+			azimut=1275.2794;
+			id=1050;
+			side="EMPTY";
+			vehicle="B_Truck_01_transport_F";
+			skill=0.60000002;
+			init="null = [this, west] execVM ""CHHQ.sqf""";
+		};
 	};
 	class Markers
 	{
-		items=21;
+		items=24;
 		class Item0
 		{
 			position[]={8111.4082,296.07303,1685.9938};
@@ -14345,6 +14393,29 @@ class Mission
 			text=" ASA FIXA CARGA";
 			type="c_plane";
 			colorName="ColorWEST";
+		};
+		class Item21
+		{
+			position[]={8052.2998,296.03586,2050.8618};
+			name="nato_light_factory";
+			text="Construção de FOB";
+			type="o_installation";
+			colorName="ColorWEST";
+		};
+		class Item22
+		{
+			position[]={8036.2305,296.03796,2041.2319};
+			name="nato_light_factory_1";
+			text="HQ Móvel";
+			type="o_installation";
+			colorName="ColorWEST";
+		};
+		class Item23
+		{
+			position[]={8178.0732,296.0159,2131.646};
+			name="MHQQ";
+			text="Teleportar para MHQ";
+			type="mil_marker";
 		};
 	};
 	class Sensors
