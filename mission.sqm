@@ -106,7 +106,8 @@ class Mission
 		"rhsusf_c_m113",
 		"A3_Soft_F_Quadbike",
 		"A3_Static_F",
-		"A3_Static_F_Gamma"
+		"A3_Static_F_Gamma",
+		"ace_cargo"
 	};
 	addOnsAuto[]=
 	{
@@ -142,6 +143,7 @@ class Mission
 		"rhsusf_c_troops",
 		"ace_medical",
 		"ace_repair",
+		"ace_cargo",
 		"A3_Structures_F_Mil_Fortification",
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Mil_Shelters",
@@ -259,7 +261,7 @@ class Mission
 						};
 						class Item2
 						{
-							value="true";
+							value="false";
 							parentCls="ALiVE_require";
 							typeName="ALiVE_AI_DISTRIBUTION";
 						};
@@ -354,7 +356,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="1100";
+							value="0";
 							parentCls="ALiVE_sys_profile";
 							typeName="spawnTypeHeliRadius";
 						};
@@ -1932,7 +1934,7 @@ class Mission
 						};
 						class Item2
 						{
-							value="600";
+							value="0";
 							parentCls="ALiVE_amb_civ_population";
 							typeName="spawnTypeHeliRadius";
 						};
@@ -2474,19 +2476,19 @@ class Mission
 						};
 						class Item1
 						{
-							value="3";
+							value="999";
 							parentCls="ALiVE_sup_combatsupport";
 							typeName="combatsupport_casrespawnlimit";
 						};
 						class Item2
 						{
-							value="5";
+							value="999";
 							parentCls="ALiVE_sup_combatsupport";
 							typeName="combatsupport_transportrespawnlimit";
 						};
 						class Item3
 						{
-							value="3";
+							value="999";
 							parentCls="ALiVE_sup_combatsupport";
 							typeName="combatsupport_artyrespawnlimit";
 						};
@@ -3674,20 +3676,22 @@ class Mission
 		};
 		class Item77
 		{
-			side="LOGIC";
+			side="WEST";
 			class Vehicles
 			{
 				items=1;
 				class Item0
 				{
-					position[]={-665.72888,600.11212,4660.1235};
+					position[]={8219.001,296.04001,2102.4863};
+					azimut=12.5435;
+					offsetY=0.60000002;
+					special="NONE";
 					id=77;
-					side="LOGIC";
-					vehicle="HeadlessClient_F";
-					player="PLAY CDG";
+					side="WEST";
+					vehicle="rhsusf_navy_sarc_d";
 					leader=1;
 					skill=0.60000002;
-					text="HC";
+					init="removeHeadgear this; removeAllWeapons this;nic = [this, ""talk""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
 				};
 			};
 		};
@@ -3699,16 +3703,16 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8219.001,296.04001,2102.4863};
-					azimut=12.5435;
+					position[]={8219.2842,296.04001,2103.8909};
+					azimut=189.687;
 					offsetY=0.60000002;
 					special="NONE";
 					id=78;
 					side="WEST";
-					vehicle="rhsusf_navy_sarc_d";
+					vehicle="rhsusf_army_ocp_sniper";
 					leader=1;
 					skill=0.60000002;
-					init="removeHeadgear this; removeAllWeapons this;nic = [this, ""talk""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
+					init="removeHeadgear this; removeAllWeapons this;nic = [this, ""stand""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
 				};
 			};
 		};
@@ -3720,16 +3724,15 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8219.2842,296.04001,2103.8909};
-					azimut=189.687;
-					offsetY=0.60000002;
+					position[]={8289.3105,296.04001,2115.28};
+					azimut=84.895699;
 					special="NONE";
 					id=79;
 					side="WEST";
-					vehicle="rhsusf_army_ocp_sniper";
+					vehicle="rhsusf_army_ocp_medic";
 					leader=1;
 					skill=0.60000002;
-					init="removeHeadgear this; removeAllWeapons this;nic = [this, ""stand""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
+					init="nic = [this, ""talk""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
 				};
 			};
 		};
@@ -3741,15 +3744,15 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8289.3105,296.04001,2115.28};
-					azimut=84.895699;
+					position[]={8290.4277,296.04001,2115.7473};
+					azimut=225.256;
 					special="NONE";
 					id=80;
 					side="WEST";
 					vehicle="rhsusf_army_ocp_medic";
 					leader=1;
 					skill=0.60000002;
-					init="nic = [this, ""talk""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
+					init="nic = [this, ""stand""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
 				};
 			};
 		};
@@ -3761,15 +3764,15 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8290.4277,296.04001,2115.7473};
-					azimut=225.256;
+					position[]={8203.0166,296.04001,2104.8621};
+					azimut=316.608;
 					special="NONE";
 					id=81;
 					side="WEST";
-					vehicle="rhsusf_army_ocp_medic";
+					vehicle="rhsusf_army_ocp_sniper";
 					leader=1;
 					skill=0.60000002;
-					init="nic = [this, ""stand""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
+					init="removeHeadgear this; nic = [this, ""stand""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
 				};
 			};
 		};
@@ -3781,15 +3784,15 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8203.0166,296.04001,2104.8621};
-					azimut=316.608;
+					position[]={8201.9697,296.04001,2106.0032};
+					azimut=160.511;
 					special="NONE";
 					id=82;
 					side="WEST";
-					vehicle="rhsusf_army_ocp_sniper";
+					vehicle="rhsusf_army_ocp_squadleader";
 					leader=1;
 					skill=0.60000002;
-					init="removeHeadgear this; nic = [this, ""stand""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
+					init="removeHeadgear this; nic = [this, ""briefing""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
 				};
 			};
 		};
@@ -3801,15 +3804,15 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8201.9697,296.04001,2106.0032};
-					azimut=160.511;
+					position[]={8201.9863,296.04001,2104.4089};
+					azimut=-3.0339899;
 					special="NONE";
 					id=83;
 					side="WEST";
-					vehicle="rhsusf_army_ocp_squadleader";
+					vehicle="rhsusf_army_ocp_marksman";
 					leader=1;
 					skill=0.60000002;
-					init="removeHeadgear this; nic = [this, ""briefing""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
+					init="removeHeadgear this; nic = [this, ""talk""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
 				};
 			};
 		};
@@ -3821,15 +3824,15 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8201.9863,296.04001,2104.4089};
-					azimut=-3.0339899;
+					position[]={8195.9639,296.04001,2132.5535};
+					azimut=135.026;
 					special="NONE";
 					id=84;
 					side="WEST";
 					vehicle="rhsusf_army_ocp_marksman";
 					leader=1;
 					skill=0.60000002;
-					init="removeHeadgear this; nic = [this, ""talk""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
+					init="nic = [this, ""talk""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
 				};
 			};
 		};
@@ -3841,15 +3844,15 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8195.9639,296.04001,2132.5535};
-					azimut=135.026;
+					position[]={8224.1113,295.57227,2174.7903};
+					azimut=642.51398;
 					special="NONE";
 					id=85;
 					side="WEST";
-					vehicle="rhsusf_army_ocp_marksman";
+					vehicle="rhsusf_army_ocp_rifleman_m4";
 					leader=1;
 					skill=0.60000002;
-					init="nic = [this, ""talk""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
+					init="nic = [this, ""stand""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
 				};
 			};
 		};
@@ -3861,15 +3864,16 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8224.1113,295.57227,2174.7903};
-					azimut=642.51398;
+					position[]={8225.9111,296.04001,2103.0122};
+					azimut=-53.8326;
+					offsetY=0.60000002;
 					special="NONE";
 					id=86;
 					side="WEST";
-					vehicle="rhsusf_army_ocp_rifleman_m4";
+					vehicle="rhsusf_usmc_recon_marpat_d_teamleader";
 					leader=1;
 					skill=0.60000002;
-					init="nic = [this, ""stand""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
+					init="removeHeadgear this; removeAllWeapons this;nic = [this, ""talk""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
 				};
 			};
 		};
@@ -3881,16 +3885,16 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8225.9111,296.04001,2103.0122};
-					azimut=-53.8326;
+					position[]={8224.9551,296.04001,2102.915};
+					azimut=7.91991;
 					offsetY=0.60000002;
 					special="NONE";
 					id=87;
 					side="WEST";
-					vehicle="rhsusf_usmc_recon_marpat_d_teamleader";
+					vehicle="rhsusf_usmc_recon_marpat_d_marksman";
 					leader=1;
 					skill=0.60000002;
-					init="removeHeadgear this; removeAllWeapons this;nic = [this, ""talk""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
+					init="removeHeadgear this; removeAllWeapons this;nic = [this, ""stand""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
 				};
 			};
 		};
@@ -3902,16 +3906,16 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8224.9551,296.04001,2102.915};
-					azimut=7.91991;
+					position[]={8226.5459,296.04001,2106.7781};
+					azimut=258.32401;
 					offsetY=0.60000002;
 					special="NONE";
 					id=88;
 					side="WEST";
-					vehicle="rhsusf_usmc_recon_marpat_d_marksman";
+					vehicle="rhsusf_army_ocp_officer";
 					leader=1;
 					skill=0.60000002;
-					init="removeHeadgear this; removeAllWeapons this;nic = [this, ""stand""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
+					init="removeHeadgear this; removeAllWeapons this;nic = [this, ""briefing""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false; [""Preload""] call BIS_fnc_arsenal; this addaction [""<t color='#FF0000'>"" +""Requisitar equipamento"",{[""Open"",true] call BIS_fnc_arsenal},nil,1,true,false,"""",""((_target distance _this <3))""];this addAction [""Selecionar Profile"", ""CreateDialog 'SLO_SaveLoad'""];";
 				};
 			};
 		};
@@ -3923,31 +3927,10 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8226.5459,296.04001,2106.7781};
-					azimut=258.32401;
-					offsetY=0.60000002;
-					special="NONE";
-					id=89;
-					side="WEST";
-					vehicle="rhsusf_army_ocp_officer";
-					leader=1;
-					skill=0.60000002;
-					init="removeHeadgear this; removeAllWeapons this;nic = [this, ""briefing""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false; [""Preload""] call BIS_fnc_arsenal; this addaction [""<t color='#FF0000'>"" +""Requisitar equipamento"",{[""Open"",true] call BIS_fnc_arsenal},nil,1,true,false,"""",""((_target distance _this <3))""];this addAction [""Selecionar Profile"", ""CreateDialog 'SLO_SaveLoad'""];";
-				};
-			};
-		};
-		class Item90
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
 					position[]={8160.0293,295.9187,2124.7959};
 					azimut=244.84801;
 					special="NONE";
-					id=90;
+					id=89;
 					side="WEST";
 					vehicle="rhsusf_army_ocp_engineer";
 					leader=1;
@@ -3956,7 +3939,7 @@ class Mission
 				};
 			};
 		};
-		class Item91
+		class Item90
 		{
 			side="LOGIC";
 			class Vehicles
@@ -3975,7 +3958,7 @@ class Mission
 							typeName="enabled";
 						};
 					};
-					id=91;
+					id=90;
 					side="LOGIC";
 					vehicle="ACE_moduleAssignMedicalFacility";
 					leader=1;
@@ -3986,7 +3969,7 @@ class Mission
 				};
 			};
 		};
-		class Item92
+		class Item91
 		{
 			side="LOGIC";
 			class Vehicles
@@ -4011,7 +3994,7 @@ class Mission
 							typeName="role";
 						};
 					};
-					id=92;
+					id=91;
 					side="LOGIC";
 					vehicle="ACE_moduleAssignRepairFacility";
 					leader=1;
@@ -4022,7 +4005,7 @@ class Mission
 				};
 			};
 		};
-		class Item93
+		class Item92
 		{
 			side="LOGIC";
 			class Vehicles
@@ -4047,7 +4030,7 @@ class Mission
 							typeName="enabled";
 						};
 					};
-					id=93;
+					id=92;
 					side="LOGIC";
 					vehicle="ACE_moduleAssignMedicVehicle";
 					leader=1;
@@ -4055,6 +4038,26 @@ class Mission
 					skill=0.60000002;
 					syncId=15;
 					synchronizations[]={19,9,24,25,15};
+				};
+			};
+		};
+		class Item93
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8196.4834,296.32407,2221.5332};
+					azimut=732.80902;
+					special="NONE";
+					id=93;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_rifleman_m4";
+					leader=1;
+					skill=0.60000002;
+					init="nic = [this, ""stand""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
 				};
 			};
 		};
@@ -4066,15 +4069,14 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8196.4834,296.32407,2221.5332};
-					azimut=732.80902;
-					special="NONE";
+					position[]={8209.501,296.20325,2222.9773};
+					azimut=-17.539301;
 					id=94;
 					side="WEST";
-					vehicle="rhsusf_army_ocp_rifleman_m4";
+					vehicle="B_GMG_01_high_F";
 					leader=1;
 					skill=0.60000002;
-					init="nic = [this, ""stand""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";this allowDamage false;";
+					init="this allowDamage false;";
 				};
 			};
 		};
@@ -4086,7 +4088,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8209.501,296.20325,2222.9773};
+					position[]={8223.3418,295.52075,2179.1775};
 					azimut=-17.539301;
 					id=95;
 					side="WEST";
@@ -4105,14 +4107,14 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8223.3418,295.52075,2179.1775};
-					azimut=-17.539301;
+					position[]={8186.5825,296.03,2132.9104};
+					azimut=152.14999;
 					id=96;
 					side="WEST";
-					vehicle="B_GMG_01_high_F";
+					vehicle="rhsusf_army_ocp_officer";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false;";
+					init="removeHeadgear this; removeAllWeapons this;nic = [this, ""briefing""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";";
 				};
 			};
 		};
@@ -4124,14 +4126,14 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8186.5825,296.03,2132.9104};
-					azimut=152.14999;
+					position[]={8187.2095,296.04001,2131.0608};
+					azimut=335.38901;
 					id=97;
 					side="WEST";
-					vehicle="rhsusf_army_ocp_officer";
+					vehicle="rhsusf_army_ocp_riflemanl";
 					leader=1;
 					skill=0.60000002;
-					init="removeHeadgear this; removeAllWeapons this;nic = [this, ""briefing""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";";
+					init="removeHeadgear this; removeAllWeapons this; removeVest  this; nic = [this, ""pushups""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";";
 				};
 			};
 		};
@@ -4143,7 +4145,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8187.2095,296.04001,2131.0608};
+					position[]={8187.9897,296.03955,2131.5305};
 					azimut=335.38901;
 					id=98;
 					side="WEST";
@@ -4162,14 +4164,14 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8187.9897,296.03955,2131.5305};
-					azimut=335.38901;
+					position[]={8195.2861,296.04001,2134.5771};
+					azimut=-4.4001999;
 					id=99;
 					side="WEST";
-					vehicle="rhsusf_army_ocp_riflemanl";
+					vehicle="rhsusf_army_ocp_squadleader";
 					leader=1;
 					skill=0.60000002;
-					init="removeHeadgear this; removeAllWeapons this; removeVest  this; nic = [this, ""pushups""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";";
+					init="removeHeadgear this; nic = [this, ""sit""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";";
 				};
 			};
 		};
@@ -4181,11 +4183,11 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8195.2861,296.04001,2134.5771};
-					azimut=-4.4001999;
+					position[]={8194.3428,296.04001,2135.6028};
+					azimut=96.6017;
 					id=100;
 					side="WEST";
-					vehicle="rhsusf_army_ocp_squadleader";
+					vehicle="rhsusf_army_ocp_autorifleman";
 					leader=1;
 					skill=0.60000002;
 					init="removeHeadgear this; nic = [this, ""sit""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";";
@@ -4200,14 +4202,14 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8194.3428,296.04001,2135.6028};
-					azimut=96.6017;
+					position[]={8195.3701,296.04001,2136.4702};
+					azimut=198.214;
 					id=101;
 					side="WEST";
-					vehicle="rhsusf_army_ocp_autorifleman";
+					vehicle="rhsusf_army_ocp_riflemanl";
 					leader=1;
 					skill=0.60000002;
-					init="removeHeadgear this; nic = [this, ""sit""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";";
+					init="removeHeadgear this; removeVest  this; nic = [this, ""sit""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";";
 				};
 			};
 		};
@@ -4219,28 +4221,9 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8195.3701,296.04001,2136.4702};
-					azimut=198.214;
-					id=102;
-					side="WEST";
-					vehicle="rhsusf_army_ocp_riflemanl";
-					leader=1;
-					skill=0.60000002;
-					init="removeHeadgear this; removeVest  this; nic = [this, ""sit""] execVM ""ShoterAnimation\ShoterAnimation.sqf"";";
-				};
-			};
-		};
-		class Item103
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
 					position[]={8197.0371,296.04001,2131.8367};
 					azimut=-55.918301;
-					id=103;
+					id=102;
 					side="WEST";
 					vehicle="rhsusf_army_ocp_autoriflemana";
 					leader=1;
@@ -4249,7 +4232,7 @@ class Mission
 				};
 			};
 		};
-		class Item104
+		class Item103
 		{
 			side="LOGIC";
 			class Vehicles
@@ -4287,7 +4270,7 @@ class Mission
 							typeName="transport_code";
 						};
 					};
-					id=104;
+					id=103;
 					side="LOGIC";
 					vehicle="ALiVE_SUP_TRANSPORT";
 					leader=1;
@@ -4298,7 +4281,7 @@ class Mission
 				};
 			};
 		};
-		class Item105
+		class Item104
 		{
 			side="LOGIC";
 			class Vehicles
@@ -4336,7 +4319,7 @@ class Mission
 							typeName="transport_code";
 						};
 					};
-					id=105;
+					id=104;
 					side="LOGIC";
 					vehicle="ALiVE_SUP_TRANSPORT";
 					leader=1;
@@ -4347,10 +4330,38 @@ class Mission
 				};
 			};
 		};
+		class Item105
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8018.9229,296.03726,2032.9668};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_moduleCargoSettings";
+							typeName="enable";
+						};
+					};
+					id=105;
+					side="LOGIC";
+					vehicle="ACE_moduleCargoSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=945;
+		items=957;
 		class Item0
 		{
 			position[]={8186.793,296.04001,1957.8997};
@@ -8959,7 +8970,7 @@ class Mission
 		};
 		class Item448
 		{
-			position[]={8121.5684,296.0094,2096.4834};
+			position[]={8121.4741,296.00549,2096.832};
 			azimut=151.78999;
 			offsetY=0.069862701;
 			id=554;
@@ -14205,10 +14216,130 @@ class Mission
 			skill=0.60000002;
 			init="null = [this, west] execVM ""CHHQ.sqf""";
 		};
+		class Item945
+		{
+			position[]={8021.6553,296.03668,2033.3251};
+			azimut=64.876541;
+			id=1051;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			skill=0.60000002;
+			init=" [""Preload""] call BIS_fnc_arsenal; this addaction [""<t color='#FF0000'>"" +""Requisitar equipamento"",{[""Open"",true] call BIS_fnc_arsenal},nil,1,true,false,"""",""((_target distance _this <3))""];this addAction [""Selecionar Profile"", ""CreateDialog 'SLO_SaveLoad'""]; veh = [this, 10] execVM ""respawn.sqf""";
+		};
+		class Item946
+		{
+			position[]={8024.5464,296.03928,2035.2766};
+			azimut=120.91647;
+			id=1052;
+			side="EMPTY";
+			vehicle="ACE_Track";
+			skill=0.60000002;
+			init="veh = [this, 10] execVM ""respawn.sqf""";
+		};
+		class Item947
+		{
+			position[]={8025.1016,296.04001,2034.3463};
+			azimut=120.91647;
+			id=1053;
+			side="EMPTY";
+			vehicle="ACE_Track";
+			skill=0.60000002;
+			init="veh = [this, 10] execVM ""respawn.sqf""";
+		};
+		class Item948
+		{
+			position[]={8024.0273,296.03845,2034.3223};
+			azimut=120.91647;
+			id=1054;
+			side="EMPTY";
+			vehicle="ACE_Track";
+			skill=0.60000002;
+			init="veh = [this, 10] execVM ""respawn.sqf""";
+		};
+		class Item949
+		{
+			position[]={8024.5537,296.03931,2033.4929};
+			azimut=120.91647;
+			id=1055;
+			side="EMPTY";
+			vehicle="ACE_Track";
+			skill=0.60000002;
+			init="veh = [this, 10] execVM ""respawn.sqf""";
+		};
+		class Item950
+		{
+			position[]={8023.5859,296.03775,2035.134};
+			azimut=120.91647;
+			id=1056;
+			side="EMPTY";
+			vehicle="ACE_Track";
+			skill=0.60000002;
+			init="veh = [this, 10] execVM ""respawn.sqf""";
+		};
+		class Item951
+		{
+			position[]={8025.3804,296.04001,2036.3793};
+			azimut=64.876541;
+			id=1057;
+			side="EMPTY";
+			vehicle="ACE_Wheel";
+			skill=0.60000002;
+			init="veh = [this, 10] execVM ""respawn.sqf""";
+		};
+		class Item952
+		{
+			position[]={8026.0391,296.04001,2035.2144};
+			azimut=64.876541;
+			id=1058;
+			side="EMPTY";
+			vehicle="ACE_Wheel";
+			skill=0.60000002;
+			init="veh = [this, 10] execVM ""respawn.sqf""";
+		};
+		class Item953
+		{
+			position[]={8026.5342,296.04001,2034.0829};
+			azimut=64.876541;
+			id=1059;
+			side="EMPTY";
+			vehicle="ACE_Wheel";
+			skill=0.60000002;
+			init="veh = [this, 10] execVM ""respawn.sqf""";
+		};
+		class Item954
+		{
+			position[]={8026.2686,296.04001,2036.7705};
+			azimut=64.876541;
+			id=1060;
+			side="EMPTY";
+			vehicle="ACE_Wheel";
+			skill=0.60000002;
+			init="veh = [this, 10] execVM ""respawn.sqf""";
+		};
+		class Item955
+		{
+			position[]={8026.8955,296.04001,2035.7037};
+			azimut=64.876541;
+			id=1061;
+			side="EMPTY";
+			vehicle="ACE_Wheel";
+			skill=0.60000002;
+			init="veh = [this, 10] execVM ""respawn.sqf""";
+		};
+		class Item956
+		{
+			position[]={8027.4326,296.04001,2034.7373};
+			azimut=64.876541;
+			id=1062;
+			side="EMPTY";
+			vehicle="ACE_Wheel";
+			skill=0.60000002;
+			init="veh = [this, 10] execVM ""respawn.sqf""";
+		};
 	};
 	class Markers
 	{
-		items=24;
+		items=25;
 		class Item0
 		{
 			position[]={8111.4082,296.07303,1685.9938};
@@ -14416,6 +14547,17 @@ class Mission
 			name="MHQQ";
 			text="Teleportar para MHQ";
 			type="mil_marker";
+		};
+		class Item24
+		{
+			position[]={8023.0732,296.04001,2031.068};
+			name="equip";
+			text="Caixa de Armas / Estepe / Esteiras";
+			type="mil_arrow2";
+			colorName="ColorWEST";
+			a=0.5;
+			b=0.5;
+			angle=1.48532;
 		};
 	};
 	class Sensors
