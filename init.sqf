@@ -1,4 +1,3 @@
-CHHQ_showMarkers = true;
 execVM "R3F_LOG\init.sqf";
 
 // test MKY sand EFX v003
