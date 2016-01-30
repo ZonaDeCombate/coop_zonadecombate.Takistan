@@ -14188,12 +14188,12 @@ class Mission
 		class Item942
 		{
 			position[]={8039.084,296.04001,2042.5223};
-			azimut=64.876541;
+			azimut=64.876503;
 			id=1048;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
-			init=" [""Preload""] call BIS_fnc_arsenal; this addaction [""<t color='#FF0000'>"" +""Requisitar equipamento"",{[""Open"",true] call BIS_fnc_arsenal},nil,1,true,false,"""",""((_target distance _this <3))""];this addAction [""Selecionar Profile"", ""CreateDialog 'SLO_SaveLoad'""]; veh = [this, 10] execVM ""respawn.sqf""";
+			init=" [""Preload""] call BIS_fnc_arsenal; this addaction [""<t color='#FF0000'>"" +""Requisitar equipamento"",{[""Open"",true] call BIS_fnc_arsenal},nil,1,true,false,"""",""((_target distance _this <3))""]; veh = [this, 10] execVM ""respawn.sqf""";
 		};
 		class Item943
 		{
@@ -14218,7 +14218,7 @@ class Mission
 		class Item945
 		{
 			position[]={8040.502,296.04001,2043.3577};
-			azimut=120.91647;
+			azimut=120.916;
 			id=1051;
 			side="EMPTY";
 			vehicle="ACE_Track";

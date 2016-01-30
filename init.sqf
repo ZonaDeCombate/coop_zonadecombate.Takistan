@@ -1,62 +1,27 @@
 execVM "R3F_LOG\init.sqf";
 
-// test MKY sand EFX v003
+["INS_HINT_EH",{params [["_text",""]]; hintSilent format["%1",_text]; }] call CBA_fnc_addEventHandler;
 
-// examples
+// ----------------------------------------------------------------------
+if(isServer) then {
+	// -------------------------------------------------------------------------------------------------------------
+	// override default data 
+	// see script/staticData.sqf
+	["MISSION INIT - Waiting"] call ALIVE_fnc_dump;
+ 
+	waitUntil {!isNil "ALiVE_STATIC_DATA_LOADED"};
+ 
+	["MISSION INIT - Continue"] call ALIVE_fnc_dump;
+ 
+	// override static data settings
+	call compile (preprocessFileLineNumbers "Scripts\staticData.sqf");
+ 
+	["MISSION INIT - Static data override loaded"] call ALIVE_fnc_dump;
+ 
+	// -------------------------------------------------------------------------------------------------------------
+};
 
-/*
-	1 - create global array
-	2 - initialize the script
 
-	MKY_arSandEFX = [];
-	nul = [] execVM "MKY\MKY_Sand_Snow_Init.sqf";
-
-	RESULT - effect runs with default parameters (random strength)
-*/
-
-/*
-	1. create global array and populate with some options
-	2 - initialize the script
-
-	MKY_arSandEFX = [0,"",true,false,true,true,true,1];
-	nul = [] execVM "MKY\MKY_Sand_Snow_Init.sqf";
-
-	RESULT - effect runs with user defined parameters
-*/
-
-/*
-	1 - create a mechanism that, through code, sets global array values
-	2 - initialize the script
-
-	if ((some value) != 4) then {
-		MKY_arSandEFX = [0,"",true,false,true,true,true,1];
-		nul = [] execVM "MKY\MKY_Sand_Snow_Init.sqf";
-	};
-
-*/
-
-/*
-	1 - create a mechanism that, through code, sets array values using mission parameters
-	2 - initialize the script
-
-	if ((paramsArray select 0) != 4) then {
-		MKY_arSandEFX = [0,"",true,false,true,true,true,(paramsArray select 0)];
-		nul = [] execVM "MKY\MKY_Sand_Snow_Init.sqf";
-	};
-
-	Or, if the mission maker wants something else, it might look like this:
-
-	if ((paramsArray select 0) != 4) then {
-		MKY_arSandEFX = []; // set as default
-		switch (paramsArray select 0) do {
-			case 0: {MKY_arSandEFX = [0,.8,true,true];};
-			case 1: {MKY_arSandEFX = [0,"",true,false,true,true,true,1];};
-			case 2: {MKY_arSandEFX = [0,.3,true,false,true,true,false,2];};
-			case 3: {MKY_arSandEFX = [[0.23,0.021,100],"",true,false,true,true,true,3];};
-		};
-		nul = [] execVM "MKY\MKY_Sand_Snow_Init.sqf";
-	};
-*/
 
 // the example below will work in single player and will create a "light" effect.
 // if the mission is loaded as multiplayer coop, the option would be available at mission start.

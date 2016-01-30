@@ -57,6 +57,9 @@ wreckLimit = 10;
 wreckRemovalMinTime = 120;
 wreckRemovalMaxTime = 300;
 
+
+
+
 class Params
 {
    class MKY_EFX
@@ -85,6 +88,19 @@ class CfgMusic
 };
 
 
+//--------------------------INTEL-------------------------------
+
+//-- Man EventHandlers
+class Extended_Init_EventHandlers {
+	class CAManBase {
+		class Spyder_EHMan {
+			init = "_this call Spyder_fnc_EHMan";
+		};
+	};
+};
+
+
+
 //-- Includes
 #include "SpyderRecruitment\dialogs.hpp"
 #include "VehicleSpawner\dialogs.hpp"
@@ -98,13 +114,4 @@ class CfgFunctions {
 	#include "VehicleSpawner\functions\cfgfunctions.hpp"
 	#include "SLO\functions\cfgfunctions.hpp"
 	#include "SpyderCivInteraction\cfgfunctions.hpp"
-};
-
-//-- Man EventHandlers
-class Extended_Init_EventHandlers {
-	class CAManBase {
-		class Spyder_EHMan {
-			init = "_this call Spyder_fnc_EHMan";
-		};
-	};
 };
