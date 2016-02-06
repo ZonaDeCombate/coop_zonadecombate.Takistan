@@ -27,21 +27,6 @@ if(isServer) then {
 // Sistema de gerenciamento de squads da Bohemia.
 ["Initialize"] call BIS_fnc_dynamicGroups;
 
-
-
-
-// the example below will work in single player and will create a "light" effect.
-// if the mission is loaded as multiplayer coop, the option would be available at mission start.
-// whatever value was chosen would be used.
-
-if ((paramsArray select 0) != 4) then {
-	// define the global sand parameter array
-	//[fog,overcast,use ppEfx,allow rain,force wind,vary fog,use wind audio,EFX strength]
-	MKY_arSandEFX = [0,"",true,false,true,true,true,(paramsArray select 0)];
-	// init the EFX scripts
-	nul = [] execVM "MKY\MKY_Sand_Snow_Init.sqf";
-};
-
 // Iniciando sistema de animações
 call compile preprocessFileLineNumbers "ShoterAnimation\init.sqf";
 

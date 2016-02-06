@@ -60,34 +60,6 @@ wreckRemovalMaxTime = 300;
 
 
 
-class Params
-{
-   class MKY_EFX
-	{
-		title = "Sand Particle EFX strength";
-		values[] = {0,1,2,3,4};
-		texts[] = {"Random","Light","Moderate","Heavy","Disabled"};
-		default = 1;
-	};
-};
-
-class CfgMusic
-{
-	tracks[]={"MKY_Blizzard","MKY_Snowfall"};
-
-	class MKY_Blizzard
-	{
-		name = "";
-		sound[] = {"\MKY\sounds\m0nkey_blizzard.ogg", db+0, 1.0};
-	};
-	class MKY_Snowfall
-	{
-		name = "";
-		sound[] = {"\MKY\sounds\m0nkey_snowfall.ogg", db+0, 1.0};
-	};
-};
-
-
 //--------------------------INTEL-------------------------------
 
 //-- Man EventHandlers
