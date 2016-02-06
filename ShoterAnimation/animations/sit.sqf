@@ -58,7 +58,7 @@ _animation = [
 				] ;
 			} ;
 		};
-player globalChat format ["abc %1", _anim];
+//player globalChat format ["abc %1", _anim];
 _anim = _anim + ["AcrgPknlMstpSnonWnonDnon_AmovPercMstpSnonWnonDnon_getOutLow"];
 _anim = _anim + ["AmovPercMstpSnonWnonDnon"];
 _anim

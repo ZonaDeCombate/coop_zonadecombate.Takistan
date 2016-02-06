@@ -19,4 +19,4 @@ ShoterAnimation_InitCompleted = true;
 BRUTE_STOP = false;
 
 
-["ShoterAnimation init Completed", "WaRnInG"] call ShoterAnimation_fnc_Message;
+//["ShoterAnimation init Completed", "WaRnInG"] call ShoterAnimation_fnc_Message;
