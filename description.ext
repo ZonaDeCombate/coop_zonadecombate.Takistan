@@ -100,7 +100,6 @@ class Extended_Init_EventHandlers {
 };
 
 
-
 //-- Includes
 #include "SpyderRecruitment\dialogs.hpp"
 #include "VehicleSpawner\dialogs.hpp"

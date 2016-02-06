@@ -1,3 +1,8 @@
+params[["_unit",objNull]];
+
+if (side _unit == EAST) then { [_unit] call compile preprocessFileLineNumbers "Intel\fnc_intelHandlerEast.sqf"; };
+if (side _unit == RESISTANCE) then { [_unit] call compile preprocessFileLineNumbers "Intel\fnc_intelHandlerGuer.sqf"; };
+
 //-- Only run on server
 if (!isServer) exitWith {};
 
@@ -37,3 +42,4 @@ if (side _unit == civilian) then {
 	if (!isNil "_role") then {[_unit,_role] execVM "Scripts\redressCivilian.sqf"};
 */
 };
+

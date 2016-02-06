@@ -1,3 +1,4 @@
+//-----Logistica R3F --------//
 execVM "R3F_LOG\init.sqf";
 
 ["INS_HINT_EH",{params [["_text",""]]; hintSilent format["%1",_text]; }] call CBA_fnc_addEventHandler;
