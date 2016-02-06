@@ -63,7 +63,7 @@ execVM "briefing.sqf";
 ["init",["WEST","LOP_ISTS"]] call SCI_fnc_civilianInteraction;
 
 //-- Initialize Spyder Ambiance
-[true, true, 30, ["TAOR_US"], false] execVM "SpyderAmbiance\init.sqf";
+[false, true, 60, ["TAOR_US"], false] execVM "SpyderAmbiance\init.sqf";
 
 //-- Spyder Framework
 call compile preprocessFileLineNumbers "SpyderFramework\init.sqf";
