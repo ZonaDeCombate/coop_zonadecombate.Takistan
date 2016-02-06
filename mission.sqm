@@ -3969,7 +3969,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=13;
-					synchronizations[]={24};
+					synchronizations[]={26};
 				};
 			};
 		};
@@ -4005,7 +4005,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=14;
-					synchronizations[]={23};
+					synchronizations[]={25};
 				};
 			};
 		};
@@ -4041,7 +4041,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=15;
-					synchronizations[]={20,9,25,26,15};
+					synchronizations[]={22,9,28,29,15,32,20,21,33,31,27};
 				};
 			};
 		};
@@ -4394,7 +4394,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=18;
-					synchronizations[]={27};
+					synchronizations[]={30};
 				};
 			};
 		};
@@ -5371,6 +5371,8 @@ class Mission
 			lock="UNLOCKED";
 			skill=0.60000002;
 			text="helo2";
+			syncId=20;
+			synchronizations[]={15};
 		};
 		class Item94
 		{
@@ -5382,6 +5384,8 @@ class Mission
 			lock="UNLOCKED";
 			skill=0.60000002;
 			text="helo3";
+			syncId=21;
+			synchronizations[]={15};
 		};
 		class Item95
 		{
@@ -5925,7 +5929,7 @@ class Mission
 			lock="UNLOCKED";
 			skill=0.60000002;
 			text="helo6";
-			syncId=20;
+			syncId=22;
 			synchronizations[]={15};
 		};
 		class Item149
@@ -5972,8 +5976,8 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			init="light = ""#lightpoint"" createVehicle [0,0,0]; light setLightBrightness 0.3; light setLightAmbient [1,0,0]; light setLightColor [10,0,0]; light lightAttachObject [this,[0,0,0]];";
-			syncId=21;
-			synchronizations[]={21};
+			syncId=23;
+			synchronizations[]={23};
 		};
 		class Item153
 		{
@@ -5985,8 +5989,8 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			init="light = ""#lightpoint"" createVehicle [0,0,0]; light setLightBrightness 0.3; light setLightAmbient [1,0,0]; light setLightColor [10,0,0]; light lightAttachObject [this,[0,0,0]];";
-			syncId=22;
-			synchronizations[]={22};
+			syncId=24;
+			synchronizations[]={24};
 		};
 		class Item154
 		{
@@ -6317,7 +6321,7 @@ class Mission
 			vehicle="Land_Hangar_2";
 			skill=0.60000002;
 			init="this enableSimulation false;this allowDamage false;this setdir 151.365;this setposATL [7999.421875,1985.170776,0.377189];this setVectorUp [0,0,1]";
-			syncId=23;
+			syncId=25;
 			synchronizations[]={14};
 		};
 		class Item178
@@ -11129,7 +11133,7 @@ class Mission
 			vehicle="Land_Medevac_HQ_V1_F";
 			skill=0.60000002;
 			init="this enableSimulation false;this allowDamage false;this setdir 57.0925;this setposATL [8298.146484,2112.786133,0.137024];this setVectorUp [0,0,1]";
-			syncId=24;
+			syncId=26;
 			synchronizations[]={13};
 		};
 		class Item629
@@ -12979,6 +12983,8 @@ class Mission
 			vehicle="RHS_C130J";
 			leader=1;
 			skill=0.60000002;
+			syncId=27;
+			synchronizations[]={15};
 		};
 		class Item806
 		{
@@ -13141,7 +13147,7 @@ class Mission
 			vehicle="rhsusf_m113d_usarmy_medical";
 			leader=1;
 			skill=0.60000002;
-			syncId=25;
+			syncId=28;
 			synchronizations[]={15};
 		};
 		class Item821
@@ -13154,7 +13160,7 @@ class Mission
 			vehicle="rhsusf_m113d_usarmy_medical";
 			leader=1;
 			skill=0.60000002;
-			syncId=26;
+			syncId=29;
 			synchronizations[]={15};
 		};
 		class Item822
@@ -13405,7 +13411,7 @@ class Mission
 			lock="LOCKED";
 			skill=0.40000001;
 			text="repair";
-			syncId=27;
+			syncId=30;
 			synchronizations[]={18};
 		};
 		class Item845
@@ -13451,6 +13457,8 @@ class Mission
 			lock="UNLOCKED";
 			skill=0.60000002;
 			text="helo3_1";
+			syncId=31;
+			synchronizations[]={15};
 		};
 		class Item849
 		{
@@ -13501,6 +13509,8 @@ class Mission
 			lock="UNLOCKED";
 			skill=0.60000002;
 			text="helo2_1";
+			syncId=32;
+			synchronizations[]={15};
 		};
 		class Item853
 		{
@@ -13551,6 +13561,8 @@ class Mission
 			lock="UNLOCKED";
 			skill=0.60000002;
 			text="helo3_2";
+			syncId=33;
+			synchronizations[]={15};
 		};
 		class Item857
 		{
