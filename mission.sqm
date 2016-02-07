@@ -110,8 +110,7 @@ class Mission
 		"ace_cargo",
 		"A3_Air_F_Beta_Heli_Transport_01",
 		"A3_Air_F_Heli_Heli_Transport_03",
-		"rhsusf_c_weapons",
-		"rhs_c_weapons"
+		"rhsusf_c_weapons"
 	};
 	addOnsAuto[]=
 	{
@@ -216,7 +215,6 @@ class Mission
 		"A3_Air_F_Beta_Heli_Transport_01",
 		"A3_Air_F_Heli_Heli_Transport_03",
 		"rhsusf_c_weapons",
-		"rhs_c_weapons",
 		"cup_takistan_config"
 	};
 	randomSeed=2154672;
@@ -226,13 +224,15 @@ class Mission
 		overviewText="www.zonadecombate.com.br";
 		resistanceWest=0;
 		resistanceEast=1;
-		startWeather=0.39999998;
-		startWind=0.099999994;
-		startWaves=0.099999994;
-		forecastWeather=0.39999998;
-		forecastWind=0.099999994;
-		forecastWaves=0.099999994;
-		forecastLightnings=0.099999994;
+		startWeather=0;
+		startWind=0;
+		forecastWeather=0;
+		forecastWind=0;
+		forecastWaves=0;
+		rainForced=1;
+		lightningsForced=1;
+		wavesForced=1;
+		windForced=1;
 		year=2009;
 		day=28;
 		hour=9;
@@ -4424,7 +4424,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=863;
+		items=864;
 		class Item0
 		{
 			position[]={8197.0166,296.04001,1946.8241};
@@ -13579,40 +13579,53 @@ class Mission
 		};
 		class Item859
 		{
-			position[]={8014.811,296.04001,2030.7209};
-			azimut=65.821198;
+			position[]={8014.6626,296.04001,2030.4215};
+			azimut=-114.236;
 			id=967;
 			side="EMPTY";
-			vehicle="rhsusf_weapons_crate";
+			vehicle="rhsusf_weapon_crate";
 			skill=0.60000002;
 			init="veh = [this, 10] execVM ""respawn.sqf""";
 		};
 		class Item860
 		{
-			position[]={8013.7568,296.04001,2030.1979};
-			azimut=65.821198;
+			position[]={8013.6885,296.04001,2029.8959};
+			azimut=-114.236;
 			id=968;
 			side="EMPTY";
-			vehicle="rhsusf_ammo_crate";
+			vehicle="rhsusf_spec_weapons_crate";
 			skill=0.60000002;
+			init="veh = [this, 10] execVM ""respawn.sqf""";
 		};
 		class Item861
 		{
-			position[]={8012.6743,296.04001,2029.7936};
-			azimut=65.821198;
+			position[]={8012.7139,296.04001,2029.3961};
+			azimut=-114.236;
 			id=969;
 			side="EMPTY";
-			vehicle="rhs_gear_crate";
+			vehicle="rhsusf_launcher_crate";
 			skill=0.60000002;
+			init="veh = [this, 10] execVM ""respawn.sqf""";
 		};
 		class Item862
 		{
-			position[]={8011.5942,296.03854,2029.2266};
-			azimut=65.821198;
+			position[]={8011.7402,296.03879,2028.7904};
+			azimut=-114.236;
 			id=970;
 			side="EMPTY";
-			vehicle="rhs_spec_weapons_crate";
+			vehicle="rhsusf_gear_crate";
 			skill=0.60000002;
+			init="veh = [this, 10] execVM ""respawn.sqf""";
+		};
+		class Item863
+		{
+			position[]={8010.582,296.03693,2028.1846};
+			azimut=-114.236;
+			id=971;
+			side="EMPTY";
+			vehicle="rhsusf_mags_crate";
+			skill=0.60000002;
+			init="veh = [this, 10] execVM ""respawn.sqf""";
 		};
 	};
 	class Markers
