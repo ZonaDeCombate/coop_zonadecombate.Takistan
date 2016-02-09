@@ -293,7 +293,7 @@ class Mission
 						};
 						class Item6
 						{
-							value="0";
+							value="1";
 							parentCls="ALiVE_require";
 							typeName="ALiVE_PAUSEMODULES";
 						};

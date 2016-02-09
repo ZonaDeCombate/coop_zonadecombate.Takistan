@@ -3,25 +3,6 @@ execVM "R3F_LOG\init.sqf";
 
 ["INS_HINT_EH",{params [["_text",""]]; hintSilent format["%1",_text]; }] call CBA_fnc_addEventHandler;
 
-// ----------------------------------------------------------------------
-if(isServer) then {
-	// -------------------------------------------------------------------------------------------------------------
-	// override default data
-	// see script/staticData.sqf
-	["MISSION INIT - Waiting"] call ALIVE_fnc_dump;
-
-	waitUntil {!isNil "ALiVE_STATIC_DATA_LOADED"};
-
-	["MISSION INIT - Continue"] call ALIVE_fnc_dump;
-
-	// override static data settings
-	call compile (preprocessFileLineNumbers "Scripts\staticData.sqf");
-
-	["MISSION INIT - Static data override loaded"] call ALIVE_fnc_dump;
-
-	// -------------------------------------------------------------------------------------------------------------
-};
-
 
 //---------------------- BI SQUAD
 // Sistema de gerenciamento de squads da Bohemia.
